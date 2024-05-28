@@ -30,3 +30,15 @@ Using git just simplifies the process. We can change the code and create separat
 Can git be used only locally? What will happen if my hard disk is damaged? What if I lost my computer?
 
 For these types of situations we can use **Git Provider .** By using git provider we can store the projects both locally and on the cloud too.
+
+**To Share Code**
+
+What if more than one person is working on a project or take instance of 10 people working on the same project.
+
+Let's assume one person makes changes now the changes must be synced with all other people codebase. What can you do in these kind of situations?
+
+![1716873878825](image/README/1716873878825.png)
+
+Well the first answer comes to my mind is **_I WOULD USE GIT_**. Using git provider we will be able to share the codes with our team easily.
+
+### To Colaborate
