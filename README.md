@@ -47,3 +47,9 @@ Well the first answer comes to my mind is **_I WOULD USE GIT_**. Using git provi
 Git is used for collaboration. When there are more people working on a same project they can be added as collaborator. We use git provider to establish a remote connection and then share the code as mentioned earlier. Git also is very intelligent machine that can merge two codes into a single one but sometime it can fail. So as a responsible citizen we sometime have to merge the code ourselves.
 
 #### Open Source
+
+Open Souce means the code which is publicly available. You can download it, you can modify it, create your version of it and publish it.
+
+We can observe that a community works on a open source project and detects the bug, fixes it, improves the code and many more. Git has many features like branches which make the open source contributions easy.
+
+### How does Git work?
