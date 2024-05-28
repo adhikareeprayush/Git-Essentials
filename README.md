@@ -15,7 +15,8 @@ The contents of the tutorial are divided as follows:
 
 ### Why Use Git?
 
-**Version Control**
+#### Version Control
+
 One of the main reason of using git is for version control. A version control system can be used to track the changes in the code.
 Let's take a senario where we have multiple versions of our project in our local storage.
 
@@ -31,7 +32,7 @@ Can git be used only locally? What will happen if my hard disk is damaged? What 
 
 For these types of situations we can use **Git Provider .** By using git provider we can store the projects both locally and on the cloud too.
 
-**To Share Code**
+#### To Share Code
 
 What if more than one person is working on a project or take instance of 10 people working on the same project.
 
@@ -41,4 +42,4 @@ Let's assume one person makes changes now the changes must be synced with all ot
 
 Well the first answer comes to my mind is **_I WOULD USE GIT_**. Using git provider we will be able to share the codes with our team easily.
 
-### To Colaborate
+#### To Colaborate
