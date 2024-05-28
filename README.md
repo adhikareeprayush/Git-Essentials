@@ -280,4 +280,49 @@ index d3ff2c6..f7c3f58 100644
 
 By regularly using `git diff`, you can closely monitor and manage changes, ensuring accuracy and intentionality in your commits.
 
+#### Introduction to `git log`
+
+The command `git log` as the name refers is used to view all the commits history.
+It gives us the follwoing info:
+
+- Commit hash through which you can rollback to that commit
+- Author Name and email of the user who made the commit
+- Date and time of the commit
+- The commit message
+
+You can also use something like `git log --graph` which represents the same thing in graphical format...
+
+Lets us take a look what we can do with the **Commit hash**
+
+- `git show <commit-hash>` can be used to view the files changed and the changes during that commit
+
+**What if you wanna search the details for a specific commit?**
+The answer is `git log --grep='your_commit'`.
+
+#### Renaming a file
+
+You can rename a file using git (Not a big deal). The commamnd for renaming a file using git is `git mv current_name new_name`
+
+#### Working with folders
+
+**Empty folders don't get push**. By default git doesn't keep the track of epty folder but if we want to keep track of an empty folder we just have to create a file `.gitkeep` inside that folder.
+
+#### Undoing the changes
+
+Let's see how can we undo the changes that have been added to the staging area. By now you must have been clear that `git add .` adds all the files changed into the staging area. For now let's take an example of a file `example.txt`. I am following the steps below:
+
+- Made some changes to `example.txt`
+- `git add example.txt`
+- To check if the file is added to the staging area or not type `git status`
+- `git restore --staged example.txt`
+- Again to verify if the file is removed from staging area type `git status`
+
+Not only the staged changes can be reversed using restore we can use `git restore` to even restore the changes made to a file.
+
+- Make some changes to `example.txt`
+- `git status` to see the change is made
+- `git restore example.txt` to revert the changes in the file
+
+#### Look back in history
+
 ### Important concepts in Git
