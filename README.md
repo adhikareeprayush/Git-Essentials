@@ -43,3 +43,7 @@ Let's assume one person makes changes now the changes must be synced with all ot
 Well the first answer comes to my mind is **_I WOULD USE GIT_**. Using git provider we will be able to share the codes with our team easily.
 
 #### To Colaborate
+
+Git is used for collaboration. When there are more people working on a same project they can be added as collaborator. We use git provider to establish a remote connection and then share the code as mentioned earlier. Git also is very intelligent machine that can merge two codes into a single one but sometime it can fail. So as a responsible citizen we sometime have to merge the code ourselves.
+
+#### Open Source
