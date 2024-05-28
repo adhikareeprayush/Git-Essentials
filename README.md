@@ -53,3 +53,11 @@ Open Souce means the code which is publicly available. You can download it, you 
 We can observe that a community works on a open source project and detects the bug, fixes it, improves the code and many more. Git has many features like branches which make the open source contributions easy.
 
 ### How does Git work?
+
+### Install and configure Git
+
+### Push your code with Git
+
+### Make changes to files
+
+### Important concepts in Git
