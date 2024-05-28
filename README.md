@@ -1,4 +1,4 @@
-# Git Essentials🚒
+# Git Essentials🚂
 
 In this tutorial, I will be discussing how to start using Git. This tutorial references multiple platforms and books that I have read. Follow along with the instructions to master Git. So, let's get started.
 
