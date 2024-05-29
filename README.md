@@ -325,4 +325,17 @@ Not only the staged changes can be reversed using restore we can use `git restor
 
 #### Look back in history
 
+We all know we have an option to look the history of the commits that have been done using `git log` now let's dive deeper and get the **hash of the commit** we have done.
+
+Using `git checkout <commit-hash>` we will be able to go back in time while that commit was made. It has nothing to do with the current branch or the current version of your code. It will be helpful to look into the history. To go to your current version or latest version just enter `git checkout main`.
+
+#### Reverrt to an old change
+
+Let's follow along to get more understanding:
+
+- `git log --oneline`
+- `git revert <commit-id>`
+
+Looking back to history is considered bad practice so reverting a change by the above methods is considered a good practice.
+
 ### Important concepts in Git
