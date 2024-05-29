@@ -339,3 +339,54 @@ Let's follow along to get more understanding:
 Looking back to history is considered bad practice so reverting a change by the above methods is considered a good practice.
 
 ### Important concepts in Git
+
+In this sectionm we will be discussing some important concepts on git and how can we use git to work in a team.
+
+##### Ignoring files
+
+Some files that are just for your local project setup and you don't wanna push those files to the remote repository to share with others then you can use the file `.gitignore` this file jus includes the name of files or the folders in simple manner.
+
+For example if i have a fine named `example.md` anywhere in my project then i can place it in `.gitignore` file by simply adding `example.md` in the `.gitignore` file. Similarly, we can include a folder too.
+
+#### Git Branches
+
+A **branch** in Git is a pointer to a specific commit, allowing you to work on different features or bug fixes in isolation. Branches make it easy to manage different versions of a project.
+
+**Key Commands**
+
+- Create a new branch
+  `git branch <branch-name>`
+
+- Switch to a branch
+  `git checkout <branch-name>`
+  or using the newer command
+  `git switch <branch-name>`
+
+- Create and switch to a new branch
+  `git checkout -b <branch-name>`
+  or using newer command
+  `git switch -c <branch-name>`
+
+- List all branches
+  `git branch`
+
+- Merge a branch into the current branch
+  `git merge <branch-name>`
+
+- Delete a branch
+  `git branch -d <branch-name>`
+
+#### Good commit Message
+
+One of the main thing to understand is the git commit messages must be good enough for others to look out for the changes you have done. Some of the key things to remember while writing a commit message are:
+
+- Describe exactly what changes were applied
+- Be present tense
+- Be a max of 50 characters
+- Could have an extra description if a blank line is added
+
+#### Merge Conflicts
+
+When multiple people are working on a same project then we can see a merge conflict when both branchs code merge with each other. There are many reasons for the conflicts to arise.
+
+We have to be careful and fix the merges with fully realizing the cause of conflicts.
