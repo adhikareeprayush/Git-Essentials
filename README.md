@@ -275,6 +275,66 @@ Good commit messages should:
 
 Merge conflicts occur when changes from different branches conflict. Carefully review and resolve conflicts to ensure a smooth merge.
 
+##### Steps to Reproduce Merge Conflict
+
+1. **Create a Project and Initialize Git:**
+   - Create a new project directory.
+   - Add an `index.html` file to the project.
+   - Initialize Git in the project directory and add the file to the local repository:
+
+     ```bash
+     git init
+     git add index.html
+     git commit -m "Initial commit with index.html"
+     ```
+
+2. **Create a New Branch from `master` (or any current branch `c1`):**
+   - Create a new branch named `child_branch`:
+
+     ```bash
+     git branch child_branch
+     ```
+
+3. **Switch to `child_branch`:**
+   - Checkout the `child_branch`:
+
+     ```bash
+     git checkout child_branch
+     ```
+
+4. **Make Changes in `child_branch` and Commit:**
+   - Make any changes to the `index.html` file in the `child_branch`.
+   - Commit the changes:
+
+     ```bash
+     git add index.html
+     git commit -m "Changes made to index.html in child_branch"
+     ```
+     ![Child Brach](image/README/child_branch.png)
+   
+
+5. **Make Changes in `master` Branch and Commit:**
+   - Switch back to the `master` branch:
+
+     ```bash
+     git checkout master
+     ```
+
+   - Make any changes to the `index.html` file in the `master` branch.
+   - Commit the changes:
+
+     ```bash
+     git add index.html
+     git commit -m "Changes made to index.html in master branch"
+     ```
+
+     ![Master Brach](image/README/master_branch.png)
+    
+
+## Result
+
+When you try to merge `child_branch` back into the `master` branch, a merge conflict will occur because both branches have made changes to the same file, `index.html`.
+
 ---
 
 Congratulations! You've reached the end of the Git Essentials
