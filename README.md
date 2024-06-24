@@ -276,6 +276,7 @@ Good commit messages should:
 Merge conflicts occur when changes from different branches conflict. Carefully review and resolve conflicts to ensure a smooth merge.
 
 ##### Steps to Reproduce Merge Conflict
+![Merge Conflict](image/README/merge_conflict.png)
 
 1. **Create a Project and Initialize Git:**
    - Create a new project directory.
@@ -329,12 +330,56 @@ Merge conflicts occur when changes from different branches conflict. Carefully r
      ```
 
      ![Master Brach](image/README/master_branch.png)
-    
+6. **Merge `child_branch` into `master` Branch:**
+   - While in the `master` branch, merge the `child_branch`:
 
-## Result
+     ```bash
+     git merge child_branch
+     # This will result in a merge conflict if both branches have changes in index.html
+     ```
+   - You will get merge conflict.
+     ![Master Brach](image/README/merge_conflict_code.png)
+
+##### Resolving the Merge Conflict
 
 When you try to merge `child_branch` back into the `master` branch, a merge conflict will occur because both branches have made changes to the same file, `index.html`.
 
----
+1. **Identify the Conflict:**
+   - Open the conflicting file (`index.html`) in a text editor. You will see conflict markers like these:
+
+     ```html
+     <<<<<<< HEAD
+     Changes made in master branch
+     =======
+     Changes made in child_branch
+     >>>>>>> child_branch
+     ```
+
+2. **Resolve the Conflict:**
+   - Edit the file to resolve the conflict by deciding which changes to keep or by combining the changes:
+
+     ```html
+     <!-- Resolved content -->
+     Changes made in master branch
+     Changes made in child_branch
+     ```
+
+3. **Mark the Conflict as Resolved:**
+   - After resolving the conflict, mark the file as resolved:
+
+     ```bash
+     git add index.html
+     ```
+
+4. **Complete the Merge:**
+   - Commit the merge to complete the process:
+
+     ```bash
+     git commit -m "Resolved merge conflict between master and child_branch"
+     ```
+
+You have successfully resolved the merge conflict and merged `child_branch` into `master`!
+    
+
 
 Congratulations! You've reached the end of the Git Essentials
